@@ -28,7 +28,6 @@ public class EmployeeBonus {
 
             switch (menu) {
                 case 1 -> {
-//                    sumMenu++;
                     Employee em = new Employee();
                     System.out.println("------Information Entry-------");
                     System.out.print("Enter ID : ");
@@ -48,9 +47,6 @@ public class EmployeeBonus {
                     em.setSalary(salary);
                     list.add(em);
 
-
-//                    System.out.println("id : " + em.getId());
-
                 }
                 case 2 -> {
                     Employee em = new Employee();
@@ -60,23 +56,18 @@ public class EmployeeBonus {
                         System.out.print("ID: " + i.getId() + "\t");
                         System.out.print("Name: " + i.getName() + "\t");
                         System.out.print("Surname: " + i.getSurname() + "\t");
-//                        System.out.print("Position : " + i.getPosition() + "\t");
                         em.type(i.getPosition(), i.getSalary());
                         System.out.print("Salary: " + (int) i.getSalary() + "\t");
                         System.out.print("Bonus: " + (int) em.Bonus + " Bath" + "\t");
-//                        em.bonus((int) i.getSalary());
                         sumSalary = sumSalary + i.getSalary();
                         bonusTotal += em.Bonus;
                     }
-
-
                     System.out.println("\n--------SUMMARY--------------");
                     System.out.println("Employee Count : " + list.size());
                     System.out.println("Salary Total = " + (int) sumSalary + " Bath");
                     System.out.println("Bonus Total = " + (int) bonusTotal + " Bath");
 
                 }
-//                    System.out.println("id:"+ name);
             }
         } while (menu != 0);
     }
