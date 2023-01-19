@@ -1,10 +1,10 @@
 package chap4;
 
 public class Employee {
-    public double Bonus;
+    public double Bonus, Sum;
     String id, Name, surname;
     int position;
-    double salary;
+    public double salary;
 
     public String getId() {
         return id;
@@ -49,39 +49,67 @@ public class Employee {
     public void type(int x, double y) {
 //        Employee em = new Employee();
         if (x == 1) {
-
             System.out.print("Position: " + "Manager" + "\t");
             if (y < 10000) {
                 Bonus = y * 0.05;
+                System.out.print("Salary: " + y + "\t");
 
             }
             if (y >= 10000) {
                 Bonus = y * 0.10;
+                System.out.print("Salary: " + y + "\t");
 
             }
+            Sum += y;
         }
         if (x == 2) {
             System.out.print("Position: " + "Assistant Manager" + "\t");
             if (y < 10000) {
                 Bonus = y * 0.15;
+                System.out.print("Salary: " + y + "\t");
 
             }
             if (y >= 10000) {
                 Bonus = y * 0.20;
+                System.out.print("Salary: " + y + "\t");
 
             }
+            Sum += y;
 
         }
         if (x == 3) {
             System.out.print("Position: " + "General" + "\t");
             if (y < 10000) {
                 Bonus = y * 0.25;
-                ;
+                System.out.print("Salary: " + y + "\t");
+
             }
             if (y >= 10000) {
                 Bonus = y * 0.30;
+                System.out.print("Salary: " + y + "\t");
+
             }
+            Sum += y;
+
         }
+        if (x > 3) {
+            System.out.print("Position: " + "No Position" + "\t");
+            if (y < 10000) {
+                y = 0;
+                Bonus = 0;
+                System.out.print("Salary: " + y + "\t");
+
+            }
+            if (y >= 10000) {
+                Bonus = 0;
+                y = 0;
+                System.out.print("Salary: " + y + "\t");
+
+            }
+            Sum += y;
+
+        }
+
     }
 
 }

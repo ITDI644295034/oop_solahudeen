@@ -57,14 +57,14 @@ public class EmployeeBonus {
                         System.out.print("Name: " + i.getName() + "\t");
                         System.out.print("Surname: " + i.getSurname() + "\t");
                         em.type(i.getPosition(), i.getSalary());
-                        System.out.print("Salary: " + (int) i.getSalary() + "\t");
+//                        System.out.print("Salary: " + (int) i.getSalary() + "\t");
                         System.out.print("Bonus: " + (int) em.Bonus + " Bath" + "\t");
-                        sumSalary = sumSalary + i.getSalary();
+//                        sumSalary = sumSalary + i.getSalary();
                         bonusTotal += em.Bonus;
                     }
                     System.out.println("\n--------SUMMARY--------------");
                     System.out.println("Employee Count : " + list.size());
-                    System.out.println("Salary Total = " + (int) sumSalary + " Bath");
+                    System.out.println("Salary Total = " + (int) em.Sum + " Bath");
                     System.out.println("Bonus Total = " + (int) bonusTotal + " Bath");
 
                 }
