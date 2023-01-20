@@ -19,13 +19,15 @@ public class EmployeeBonus {
         Scanner sc = new Scanner(System.in);
         int menu = 0;
         double sumSalary = 0.0, bonusTotal = 0.0;
-
         ArrayList<Employee> list = new ArrayList<Employee>();
         do {
             printMenu();
             System.out.print("Please Enter menu [0-2] : ");
             menu = sc.nextInt();
-
+//            if (menu > 2) {
+//                menu = 0;
+//                System.out.println("No in Menu");
+//            }
             switch (menu) {
                 case 1 -> {
                     Employee em = new Employee();
@@ -46,7 +48,7 @@ public class EmployeeBonus {
                     em.setPosition(type);
                     em.setSalary(salary);
                     list.add(em);
-
+                    break;
                 }
                 case 2 -> {
                     Employee em = new Employee();
@@ -66,7 +68,7 @@ public class EmployeeBonus {
                     System.out.println("Employee Count : " + list.size());
                     System.out.println("Salary Total = " + (int) em.Sum + " Bath");
                     System.out.println("Bonus Total = " + (int) bonusTotal + " Bath");
-
+                    break;
                 }
             }
         } while (menu != 0);
