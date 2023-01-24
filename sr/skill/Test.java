@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Test {
 
     public static void main(String[] args) {
-        int num = 0;
+        int num ;
         Scanner sc = new Scanner(System.in);
         System.out.println("--");
         num = sc.nextInt();
@@ -17,3 +17,4 @@ public class Test {
         }
     }
 }
+   
