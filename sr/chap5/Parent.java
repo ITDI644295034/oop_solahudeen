@@ -1,7 +1,7 @@
 package chap5;
 
 public class Parent {
-    private String parentName,address,telephoneNo;
+    private String parentName, address, telephoneNo;
 
     public Parent(String parentName, String address, String telephoneNo) {
         this.parentName = parentName;
@@ -36,8 +36,8 @@ public class Parent {
     @Override
     public String toString() {
         return
-                "parentName='" + parentName + '\'' +
-                ", \naddress='" + address + '\'' +
-                ", \ntelephoneNo='" + telephoneNo ;
+                "parentName: " + parentName+
+                        "\naddress: " + address +
+                        "\ntelephoneNo: " + telephoneNo;
     }
 }

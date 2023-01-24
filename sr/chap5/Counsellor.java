@@ -1,7 +1,7 @@
 package chap5;
 
 public class Counsellor {
-    private String counsellorId,counsellorName,telephoneNo;
+    private String counsellorId, counsellorName, telephoneNo;
 
     public Counsellor(String counsellorId, String counsellorName, String telephoneNo) {
         this.counsellorId = counsellorId;
@@ -36,8 +36,6 @@ public class Counsellor {
     @Override
     public String toString() {
         return
-                "counsellorId='" + counsellorId + '\'' +
-                ", \ncounsellorName='" + counsellorName + '\'' +
-                ", \ntelephoneNo='" + telephoneNo + '\'';
+                "counsellorId: " + counsellorId + "\ncounsellorName: " + counsellorName + "\ntelephoneNo: " + telephoneNo;
     }
 }

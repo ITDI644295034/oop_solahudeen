@@ -1,7 +1,7 @@
 package chap5;
 
 public class Student {
-    String StudentId,StudentName;
+    String StudentId, StudentName;
     private Counsellor counsellor;
     private Parent parent;
 
@@ -44,27 +44,27 @@ public class Student {
         this.parent = parent;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "StudentId='" + StudentId + '\'' +
-                ", StudentName='" + StudentName + '\'' +
-                ", counsellor=" + counsellor +
-                ", parent=" + parent +
-                '}';
-    }
 
-    public void printDetails(){
-            System.out.println("StudentId: "+getStudentId());
-        System.out.println("StudentName: "+getStudentName());
+
+    public void printDetails() {
+
+        // ------------แบบมี to string ---------------------------
+        System.out.println("StudentId: " + getStudentId());
+        System.out.println("StudentName: " + getStudentName());
         System.out.println(getCounsellor());
         System.out.println(getParent());
-//        System.out.println("Counsellor name:"+getCounsellor());
-//        System.out.println("Telephone:"+getCounsellor());
-//        System.out.println("Address:"+getCounsellor());
-//        System.out.println("Telephone:"+getCounsellor());
+
+        // ------------แบบไม่มี to string ---------------------------
+//        System.out.println("Counsellor ID: " + counsellor.getCounsellorId());
+//        System.out.println("Counsellor name: " + counsellor.getCounsellorName());
+//        System.out.println("Telephone: " + counsellor.getTelephoneNo());
+//        System.out.println("Parent name: " + parent.getParentName());
+//        System.out.println("Address: " + parent.getAddress());
+//        System.out.println("Telephone: " + parent.getTelephoneNo());
 //        toString();
 
 
-        };
+    }
+
+    ;
 }
