@@ -20,10 +20,7 @@ public class SaleCommission {
             printMenu();
             System.out.print("Please Enter menu [0-2] : ");
             menu = sc.nextInt();
-//            if (menu > 2) {
-//                menu = 0;
-//                System.out.println("No in Menu");
-//            }
+//
             switch (menu) {
                 case 1 -> {
                     Sale sl = new Sale();

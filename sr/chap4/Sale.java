@@ -84,6 +84,7 @@ public class Sale {
                 Comm = y * 0.25;
                 System.out.print("Sale Total: " + y + "\t");
 
+
             }
             if (y >= 10000) {
                 Comm = y * 0.30;
