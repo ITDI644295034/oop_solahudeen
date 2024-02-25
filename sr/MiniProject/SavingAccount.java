@@ -1,14 +1,12 @@
-package chap5;
-
-import MiniProject.MyMoney;
+package MiniProject;
 
 public class SavingAccount extends MyMoney {
-
-
     @Override
     public void withdraw(double amount) {
         System.out.println("ถอนเงิน : " + amount);
-        double tempBalance = getBalance() - amount;
+        System.out.println(getBalance());
+        double tempBalance = amount - getBalance();
+        System.out.println(tempBalance);
         if (tempBalance >= 50) {
             setBalance(tempBalance);
         } else {
